@@ -90,7 +90,8 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: rgb(59,59,59, 0.8);
+  z-index: 1;
 }
 
 .overlay-mf {
