@@ -133,6 +133,86 @@ a:hover {
   margin-top: 4rem;
 }
 
+/* Carrosel */
+section.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input {
+  display: none;
+}
+
+.slide-box {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box img {
+  width: 40%;
+}
+
+.nav-manual, .nav-auto{
+  position: absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+  border: 1px solid #0078ff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+  background-color: #0078ff;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5 {
+  background-color: #0078ff;
+}
+
+#radio1:checked ~ .primeiro {
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro {
+  margin-left: -75%;
+}
+
+#radio5:checked ~ .primeiro {
+  margin-left: -100%;
+}
+
 /*--/ Title s /--*/
 
 .title-s {
@@ -223,6 +303,7 @@ a:hover {
 
 .socials ul li {
   display: inline-block;
+  position: relative;
 }
 
 .socials .ico-circle {
@@ -234,6 +315,7 @@ a:hover {
   margin: 0 15px 0 0;
   box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
+
 }
 
 .socials .ico-circle:hover {
@@ -242,6 +324,73 @@ a:hover {
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
 }
+
+.cont{
+  display: flex;
+  gap: 1rem;
+  display: inline-block;
+}
+
+.item{
+  position: relative;
+}
+
+.item:hover>.tooltip{
+  opacity: 1;
+}
+
+.icone{ 
+  font-size: 30px;
+  background-color: #0078ff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: all 500ms ease
+}
+
+.icone:hover{
+  background-color: #0078ff;
+  color: #fff;
+  transition: all 500ms ease
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgb(59, 59, 59);
+  color: #fff;
+  padding: 0.2rem 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+  will-change: transform;
+  opacity: 0;
+  transition: all 0.4;
+  display: inline-block;
+  transition: all 200ms ease
+
+}
+
+.tooltip:hover {
+  opacity: 1;
+}
+
+.tooltip span {
+  display: block;
+}
+
+.tooltip::after{ 
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(59, 59, 59) transparent transparent transparent;
+}
+
 
 /*------/ Ul resect /------*/
 
@@ -935,7 +1084,7 @@ a:hover {
 .card-blog .post-date {
   color: #4e4e4e;
   display: inline-block;
-  float: right;
+  
 }
 
 /*======================================

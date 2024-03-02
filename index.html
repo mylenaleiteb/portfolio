@@ -54,11 +54,11 @@
             <a class="nav-link js-scroll" href="#about">Sobre mim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Projetos</a>
+            <a class="nav-link js-scroll" href="#service">Serviços</a>
           </li>
-          <!--<li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#projetos">Projetos</a>
+          </li>
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll" href="#blog">Blog</a>
           </li> -->
@@ -106,33 +106,66 @@
                       <p><span class="title-s">Nome: </span> <span>Mylena Leite Bortolozzo</span></p>
                       <p><span class="title-s">Profissão: </span> <span>Analista de Sistemas / Programadora</span></p>
                       <p><span class="title-s">Email: </span> <span>mylenalb.dev@gmail.com</span></p>
-                      <p><span class="title-s">Telefone/Whatsapp: </span> <span><a href="https://wa.me/5527997150373"> (27)997150373 </a></span></p>
+                      <p><span class="title-s">Telefone/Whatsapp: </span> <span><a href="https://wa.me/5527997150373" rel="noopener noreferrer" target="_blank"> (27)997150373 </a></span></p>
                     </div>
                   </div>
                 </div>
                 <div class="skill-mf">
-                  <!-- <p class="title-s"></p>
-                  <span>HTML</span>
-                  <div>
-                    <img src="img/html-simbolo.png" style="width: 10%;">
-                  </div>
-                  <span>HTML</span>
-                  <div>
-                    <img src="img/css-simbolo.png" style="width: 10%;">
-                  </div>
-                  <span>HTML</span>
-                  <div>
-                    <img src="img/-simbolo.png" style="width: 10%;">
-                  </div>
-                  <span>HTML</span>
-                  <div>
-                    <img src="img/html-simbolo.png" style="width: 10%;">
-                  </div> -->
+                <div style="margin-bottom: 20px;">  
+                  <span class="title-s"> Tecnologias que trabalho: </span>
+                </div>
+
+                  <section class="slider">
+                    <div class="slider-content">
+
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+                        <input type="radio" name="btn-radio" id="radio4">
+                        <input type="radio" name="btn-radio" id="radio5">
+                
+                        <div class="slide-box primeiro">
+                            <img class="img-desktop" src="img/html-simbolo.png" alt="slide 1">
+                        </div>
+                
+                        <div class="slide-box">
+                          <img class="img-desktop" src="img/css-simbolo.png" alt="slide 2">
+                        </div>
+                
+                        <div class="slide-box">
+                          <img class="img-desktop" src="img/php-simbolo.png" alt="slide 3">
+                        </div>
+                
+                        <div class="slide-box">
+                          <img class="img-desktop" src="img/js-simbolo.png" alt="slide 4">
+                        </div>
+
+                        <div class="slide-box">
+                          <img class="img-desktop" src="img/sql-simbolo.png" alt="slide 5">
+                        </div>
+                
+                        <div class="nav-auto"> <!-- navegação automática -->
+                          <div class="auto-btn1"></div>
+                          <div class="auto-btn2"></div>
+                          <div class="auto-btn3"></div>
+                          <div class="auto-btn4"></div>
+                          <div class="auto-btn5"></div>
+                        </div>
+                
+                      <div class="nav-manual"> <!-- navegação manual as labels fazem referências aos inputs -->
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                      </div>
+
+                    </div>
+                  </section>
+
                 </div>
               </div>
 
-
-              
               <div class="col-md-6">
                 <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
@@ -158,6 +191,11 @@
     </div>
   </section>
     <!--/ Sobre mim End /-->
+
+  <!--/ Section Tecnologias que trabalho /-->
+  
+
+
 
   <!--/ Section Services Star /-->
   <section id="service" class="services-mf route">
@@ -324,7 +362,7 @@
   <!--/ Infos section End/-->
 
   <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
+  <section id="projetos" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -645,7 +683,7 @@
   <!--/ Section Blog End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
     <!-- <div class="overlay-mf"></div> -->
      <div class="container">
        <div class="row">
@@ -711,8 +749,30 @@
                     </ul>
                   </div>
                   <div class="socials">
+                    <div class="cont">
+                      <div class="item"> 
+                      
+                        <div class="tooltip"> GitHub </div>
+                        <a href="https://github.com/mylenaleiteb" rel="noopener noreferrer" target="_blank">
+                          <div class="icone"><i class="ion-social-github"></i></div> </a>
+                      </div> 
+                    </div>
+                    <div class="cont">
+                      <div class="item"> 
+                        <div class="tooltip"> Instagram </div>
+                        <a href="https://instagram.com/mylenalb.dev" rel="noopener noreferrer" target="_blank">
+                          <div class="icone"><i class="ion-social-instagram"></i></div> </a>
+                        </div>
+                    </div>
+
+
                     <ul>
-                      <li><a href="https://github.com/mylenaleiteb" rel="noopener noreferrer" target="_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                      <!-- <li>
+                        <a href="https://github.com/mylenaleiteb" rel="noopener noreferrer" target="_blank">
+                          <div class="ico-circle"><i class="ion-social-github"></i></div>
+                          <span class="tooltip">GitHub</span>
+                        </a>
+                      </li> -->
                       <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li> -->
                       <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li> -->
                       <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li> -->
@@ -767,6 +827,5 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
 </body>
 </html>
